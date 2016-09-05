@@ -17,10 +17,9 @@ for i = 1:length(Data)
     currentline = Data{i};
     currentline2 = Data2{i};
     if size(currentline,2) > 0
-        if size(currentline2,2) > 0
-            if currentline2(1) == '<'
-                Data{i}=currentline2;
-            end
+        if size(currentline,2) > 0
+        if currentline2(1) == '<'
+            Data{i}=currentline2;
         end
     end
 end
